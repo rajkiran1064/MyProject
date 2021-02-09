@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Firebase RD</title>
+     
+     <!DOCTYPE html>
+     <html>
+       <head>
+         <meta charset="utf-8">
+         <title>My Firebase Project</title>
+        
+          
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+ 
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBhBg6OepJU35Pm7ddtuEDeuQEb2BbSj0s",
+    authDomain: "studentdetails-8fd25.firebaseapp.com",
+    projectId: "studentdetails-8fd25",
+    storageBucket: "studentdetails-8fd25.appspot.com",
+    messagingSenderId: "1028182679999",
+    appId: "1:1028182679999:web:707ddda8273794174e010a"
+    };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+   <script defer src= "add.js"></script>
+    </head>
+     <body>
+      <div id="loginDiv" >
+        <form id = "myForm" action = "" method = "post">
+          <div>
+            StudentId : <input type="text" name="student" id="getId" placeholder="Enter your id">
+       </div>
+        <div>
+             StudentName : <input type="text" name="Name" id="getname" placeholder="Enter your Name">
+        </div>
+        <div>
+            StudentAge : <input type="text" name="Age" id="getage"placeholder="your age">
+        </div>
+        <div>
+          Studentgame : <input type="text" name="Game" id="getgame"placeholder="your game"><br>
+      </div>
+        <div> 
+          <p></p>
+          <button type="submit" Name="add" id="Addstudent">Add</button>
+          <button type="submit"  Name="update" id="Updatestudent">Update</button>
+          <button type="submit"  Name="delete" id="Deletestudent">Delete</button>
+        </div>
+        </form>
+      </div>
+      <div id="DetailsSection">
+         <p id="Sname"></p>
+         <p id="retrivedata"></p>
+
+      </div> 
+    
+     </body>
+     </html>
+     
+
